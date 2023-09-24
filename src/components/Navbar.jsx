@@ -6,9 +6,15 @@ export default function () {
   return (
     <>
       <div className="Navbar">
-        <div>hamburger menu</div>
-        <div>logo</div>
-        <div>shopping cart</div>
+        <div className="hamenu">
+          <span>&mdash;</span>
+          <span>&mdash;</span>
+          <span>&mdash;</span>
+        </div>
+        <div className="logo">
+          <span>RIFT</span>
+        </div>
+        <div className="shoppingCart">shopping cart</div>
       </div>
     </>
   );

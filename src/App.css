@@ -19,15 +19,17 @@
   width: 100%;
   padding: 0 0.5rem;
 }
-.landingImage {
-  background-image: url(/src/assets/whereslugo-ad047kyPBh8-unsplash.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 720px;
-  padding: 0 0 2rem 1rem;
+.Navbar .logo {
+}
+.Navbar .logo span {
+}
+.hamenu {
   display: flex;
-  flex-direction: column-reverse;
-  text-align: start;
+  flex-direction: column;
+}
+.hamenu span {
+  font-size: 1.5rem;
+  line-height: 0.3rem;
 }
 
 /*  */
@@ -36,4 +38,95 @@
 
 /* Home */
 .Home {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
+.landingImage {
+  background-image: url(/src/assets/pexels-cottonbro-studio-10123264.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 97vw;
+  height: 720px;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: start;
+}
+.landingImage div {
+  padding: 0 0 1rem 1rem;
+  color: #96351e;
+}
+.secondaryImage {
+  width: 97vw;
+  object-fit: cover;
+}
+.emailListing {
+  padding: 2rem 0;
+}
+.emailListing form {
+  display: flex;
+  flex-direction: column;
+}
+.emailListing form div {
+  display: flex;
+  justify-content: start;
+}
+.emailListing span {
+  font-size: 1.2rem;
+}
+.emailListing h4 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.storeTour {
+  display: flex;
+  padding: 1rem 0;
+}
+.storeTour video {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+.storeTour .textContent {
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 480px;
+  position: relative;
+  bottom: 0;
+}
+.collectionShowcase {
+  background-image: url(src/assets/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg);
+  width: 98vw;
+  height: 480px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  height: 480px;
+  position: relative;
+  bottom: 0;
+}
+.storePanel {
+}
+.storePanel ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 0;
+  margin-left: 0;
+}
+.storePanel li {
+  width: 95%;
+  text-align: start;
 }
