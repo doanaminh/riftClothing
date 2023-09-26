@@ -9,12 +9,12 @@ export default function () {
               Discover the Rift for Nike in two Canadian-inspired colorways
               celebrating our new flagship location.
             </p>
-            <a href="">READ THE BLOG</a>
+            <a href="">read the blog</a>
           </div>
         </main>
 
         <section className="emailListing">
-          <form action="">
+          <form action="" id="newsLetter">
             <span>&mdash; Coming Soon &mdash;</span>
             <h4>Rift for Nike - Toronto</h4>
             <p>
@@ -29,7 +29,7 @@ export default function () {
               </label>
             </div>
             <input type="email" placeholder="ENTER YOUR EMAIL" />
-            <button>SUBMIT</button>
+            <button htmlFor="newsLetter">SUBMIT</button>
           </form>
         </section>
 
@@ -53,9 +53,47 @@ export default function () {
           <ul>
             <li>
               <img
-                src="src/assets/hamza-nouasria-sEEB0CtXsyI-unsplash.jpg"
+                src="src/assets/pexels-abdullah-alsaibaie-10853637.jpg"
                 alt=""
               />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-broxx-asia-11135667.jpg" alt="" />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-broxx-asia-11292946.jpg" alt="" />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img
+                src="src/assets/pexels-cristiano-de-luca-10963373.jpg"
+                alt=""
+              />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-lappen-fashion-4296075.jpg" alt="" />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-malcolm-garret-6744427.jpg" alt="" />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-ray-piedra-1464625.jpg" alt="" />
+              <p className="itemName">Rift for the Nikes: Phantom Whites</p>
+              <span className="itemPrice">$230</span>
+            </li>
+            <li>
+              <img src="src/assets/pexels-rujwal-pradhan-10210779.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>

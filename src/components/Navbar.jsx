@@ -12,9 +12,9 @@ export default function () {
           <span>&mdash;</span>
         </div>
         <div className="logo">
-          <span>RIFT</span>
+          <a href="/">R I F T</a>
         </div>
-        <div className="shoppingCart">shopping cart</div>
+        <div className="shoppingCart">cart</div>
       </div>
     </>
   );

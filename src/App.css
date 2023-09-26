@@ -10,20 +10,22 @@
   justify-content: space-between;
   position: fixed;
   z-index: 1;
-  width: 100%;
-  padding: 0 0.5rem;
+  left: 0;
+  right: 0;
+  padding: 0.2rem 1rem;
+  font-size: 2rem;
 }
-.Navbar .logo {
-}
-.Navbar .logo span {
+.Navbar .logo a {
+  color: white;
 }
 .hamenu {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .hamenu span {
-  font-size: 1.5rem;
-  line-height: 0.3rem;
+  font-size: 2rem;
+  line-height: 0;
 }
 
 /*  */
@@ -43,7 +45,6 @@ img {
   background-image: url(/src/assets/pexels-cottonbro-studio-10123264.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 97vw;
   height: 720px;
   padding: 0;
   display: flex;
@@ -53,6 +54,7 @@ img {
 .landingImage div {
   padding: 0 0 1rem 1rem;
   color: #96351e;
+  font-size: 2rem;
 }
 .secondaryImage {
   width: 97vw;
@@ -64,13 +66,20 @@ img {
 .emailListing form {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .emailListing form div {
   display: flex;
   justify-content: start;
+  padding: 2rem 0 0.5rem 0;
+  font-size: 1.2rem;
 }
 .emailListing span {
   font-size: 1.2rem;
+}
+.emailListing input {
+  padding: 1rem;
+  margin: 0 1rem;
 }
 .emailListing h4 {
   font-size: 2rem;
@@ -79,14 +88,16 @@ img {
 .emailListing button {
   font-size: 2rem;
   margin: 1rem;
+  cursor: pointer;
 }
 .storeTour {
   display: flex;
   padding: 1rem 0;
+  font-size: 2rem;
 }
 .storeTour video {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   z-index: -1;
   left: 0;
@@ -97,7 +108,8 @@ img {
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  height: 480px;
+  height: 490px;
+  padding: 1rem;
   position: relative;
   bottom: 0;
 }
@@ -121,10 +133,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 0;
-  margin-left: 0;
+  padding-left: 1rem;
+  margin: 1rem 0;
 }
 .storePanel li {
   width: 95%;
   text-align: start;
+  padding-bottom: 2rem;
+  cursor: pointer;
 }
