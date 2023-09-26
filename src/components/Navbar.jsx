@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Hamenu from "./Hamenu";
 
 export default function () {
   const navigate = useNavigate();
@@ -6,11 +7,7 @@ export default function () {
   return (
     <>
       <div className="Navbar">
-        <div className="hamenu">
-          <span>&mdash;</span>
-          <span>&mdash;</span>
-          <span>&mdash;</span>
-        </div>
+        <Hamenu />
         <div className="logo">
           <a href="/">R I F T</a>
         </div>

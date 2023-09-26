@@ -9,7 +9,7 @@ export default function () {
               Discover the Rift for Nike in two Canadian-inspired colorways
               celebrating our new flagship location.
             </p>
-            <a href="">read the blog</a>
+            <a href="">READ THE BLOG</a>
           </div>
         </main>
 
@@ -45,7 +45,7 @@ export default function () {
             <p>
               Take a first look inside of the Rift Toronto Flagship location.
             </p>
-            <a href="">view the blog</a>
+            <a href="">VIEW THE BLOG</a>
           </div>
         </section>
 
