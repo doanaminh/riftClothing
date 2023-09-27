@@ -28,24 +28,106 @@
   font-size: 2rem;
   line-height: 0.7rem;
 }
-.hamnav {
+.hamBg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.navClose {
   position: absolute;
   height: 0;
   width: 0;
   z-index: -1;
   left: 0;
   display: none;
-  transition: all ease-in 0.2s;
+  transition: all ease-in-out 0.25s;
 }
-.navOpen {
+.hamnavOpen {
   position: absolute;
   display: inline-block;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   height: 100vh;
   width: 40vw;
   background-color: #2c3336;
+}
+.navOpen .hamBg {
+  z-index: 2;
+}
+.hamnav .topSection {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+.hamnav .topSection li {
+  width: 50%;
+}
+.hamnav .topSection li a {
+  cursor: pointer;
+}
+.hamnav .topSection li:first-child {
+  font-size: 1.4rem;
+  text-align: start;
+}
+.hamSearch {
+  padding: 1rem 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.hamSearch input {
+  border: 1px solid grey;
+  width: 90%;
+  height: 40px;
+}
+.hamSearch label {
+  position: absolute;
+  right: 50px;
+  height: 40px;
+}
+.hamCats {
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+}
+.hamCats ul {
+  padding: 0.5rem 0;
+}
+.hamSubCats {
+  height: 0;
+  display: none;
+  transition: all ease-in-out 0.25s;
+}
+.hamSubCats li {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 0.5rem 1rem;
+}
+.hamCat {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hamCat .menos {
+  display: none;
+}
+.hidePlus {
+  display: none;
+}
+.hamCat .showMenos {
+  display: inline-block;
+}
+.colOpen,
+.mensOpen,
+.womensOpen {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
 }
 
 /*  */

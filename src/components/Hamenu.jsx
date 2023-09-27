@@ -12,16 +12,12 @@ export default function () {
     mens: false,
     womens: false,
   };
-  const [hamOpen, setHamOpen] = useState({
-    open1: true,
-    open2: false,
-    open3: false,
-  });
+  const [hamOpen, setHamOpen] = useState(defHamOpen);
   const handleHamOpen = (e) => {
-    console.log(e.target);
+    const ev = e.target.id;
     setHamOpen({
       ...defHamOpen,
-      [e.target.name]: !e.target.name,
+      [e.target.id]: !hamOpen[`${ev}`],
     });
   };
 
@@ -34,117 +30,158 @@ export default function () {
           <span>&mdash;</span>
         </div>
       </div>
-      <div className={`hamnav ${open ? "navOpen" : "navClose"}`}>
-        <ul>
-          <li>
-            <a onClick={handleOpen}>close</a>
-          </li>
-          <li>
-            <a href="">logo</a>
-          </li>
-        </ul>
-        <div className="hamSearch">
-          <input type="text" placeholder="Search . . ." />
-          <label htmlFor="">maglass</label>
+      <div className={`hamnav ${open ? "" : "navClose"}`}>
+        <div className="hamBg" onClick={handleOpen}></div>
+        <div className="hamnavOpen">
+          <ul className="topSection">
+            <li>
+              <a onClick={handleOpen}>close</a>
+            </li>
+            <li>
+              <a href="">R I F T</a>
+            </li>
+            <li></li>
+          </ul>
+          <div className="hamSearch">
+            <input type="text" placeholder="Search . . ." />
+            <label htmlFor="">g</label>
+          </div>
+          <div className="hamCats">
+            <ul className="collections">
+              <div className="hamCat" onClick={handleHamOpen} id="collections">
+                <label id="collections">Collections</label>
+                <span
+                  id="collections"
+                  className={`plus ${hamOpen.collections ? "hidePlus" : ""}`}
+                >
+                  +
+                </span>
+                <span
+                  id="collections"
+                  className={`menos ${hamOpen.collections ? "showMenos" : ""}`}
+                >
+                  -
+                </span>
+              </div>
+              <div
+                className={`hamSubCats ${hamOpen.collections ? "colOpen" : ""}`}
+              >
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Rift Monday Program
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Rift Fall 2023
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Rift Fall Classics
+                  </a>
+                </li>
+              </div>
+            </ul>
+
+            <ul className="mens">
+              <div className="hamCat" onClick={handleHamOpen} id="mens">
+                <label id="mens">Mens</label>
+                <span id="mens" className="plus">
+                  +
+                </span>
+                <span id="mens" className="menos">
+                  -
+                </span>
+              </div>
+              <div className={`hamSubCats ${hamOpen.mens ? "mensOpen" : ""}`}>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    New Arrivals
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Footwear
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Apparel
+                  </a>
+                </li>
+              </div>
+            </ul>
+
+            <ul className="womens">
+              <div className="hamCat" onClick={handleHamOpen} id="womens">
+                <label id="womens">Womens</label>
+                <span id="womens" className="plus">
+                  +
+                </span>
+                <span id="womens" className="menos">
+                  -
+                </span>
+              </div>
+
+              <div
+                className={`hamSubCats ${hamOpen.womens ? "womensOpen" : ""}`}
+              >
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    New Arrivals
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Footwear
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    Apparel
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <ul className="collections">
-          <label htmlFor="" onClick={handleHamOpen}>
-            Collections
-          </label>
-          <span>+</span>
-          <span>-</span>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Rift Monday Program
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Rift Fall 2023
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Rift Fall Classics
-            </a>
-          </li>
-        </ul>
-        <ul className="mens">
-          <label htmlFor="">Mens</label>
-          <span>+</span>
-          <span>-</span>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              New Arrivals
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Footwear
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Apparel
-            </a>
-          </li>
-        </ul>
-        <ul className="womens">
-          <label htmlFor="">Womens</label>
-          <span>+</span>
-          <span>-</span>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              New Arrivals
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Footwear
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Apparel
-            </a>
-          </li>
-        </ul>
       </div>
     </>
   );
