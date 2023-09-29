@@ -113,6 +113,9 @@
   justify-content: space-between;
   cursor: pointer;
 }
+.hamCat label {
+  cursor: pointer;
+}
 .hamCat .menos {
   display: none;
 }
@@ -197,12 +200,14 @@ img {
   cursor: pointer;
 }
 .storeTour {
+  position: relative;
   display: flex;
   padding: 1rem 0;
   font-size: 2rem;
+  height: 430px;
 }
 .storeTour video {
-  width: 100%;
+  width: 100vw;
   object-fit: contain;
   position: absolute;
   z-index: -1;
@@ -214,10 +219,11 @@ img {
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  height: 490px;
+  height: 100%;
   padding: 1rem;
   position: relative;
   bottom: 0;
+  text-align: start;
 }
 .storeTour .textContent a {
   color: #96351e;
