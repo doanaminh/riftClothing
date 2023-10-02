@@ -1,3 +1,13 @@
+import videoBg from "../assets/videoBg.mp4";
+import demo1 from "../assets/demo1.jpg";
+import demo2 from "../assets/demo2.jpg";
+import demo3 from "../assets/demo3.jpg";
+import demo4 from "../assets/demo4.jpg";
+import demo5 from "../assets/demo5.jpg";
+import demo6 from "../assets/demo6.jpg";
+import demo7 from "../assets/demo7.jpg";
+import demo8 from "../assets/demo8.jpg";
+
 export default function () {
   return (
     <>
@@ -35,7 +45,7 @@ export default function () {
 
         <section className="storeTour">
           <video autoPlay loop muted>
-            <source src="client/src/assets/video.mp4" type="video/mp4" />
+            <source src={videoBg} type="video/mp4" />
           </video>
           <div className="textContent">
             <h3>Rift Toronto Flagship</h3>
@@ -49,42 +59,42 @@ export default function () {
         <section className="storePanel">
           <ul>
             <li>
-              <img src="client/src/assets/demo1.jpg" alt="" />
+              <img src={demo1} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo2.jpg" alt="" />
+              <img src={demo2} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo3.jpg" alt="" />
+              <img src={demo3} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo4.jpg" alt="" />
+              <img src={demo4} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo5.jpg" alt="" />
+              <img src={demo5} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo6.jpg" alt="" />
+              <img src={demo6} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo7.jpg" alt="" />
+              <img src={demo7} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="client/src/assets/demo8.jpg" alt="" />
+              <img src={demo8} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
