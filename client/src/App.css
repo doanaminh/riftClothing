@@ -147,7 +147,7 @@ img {
   width: 100%;
 }
 .landingImage {
-  background-image: url(/src/assets/pexels-cottonbro-studio-10123264.jpg);
+  background-image: url(/src/assets/mainBG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 720px;

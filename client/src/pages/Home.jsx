@@ -35,7 +35,7 @@ export default function () {
 
         <section className="storeTour">
           <video autoPlay loop muted>
-            <source src="/src/assets/video.mp4" type="video/mp4" />
+            <source src="client/src/assets/video.mp4" type="video/mp4" />
           </video>
           <div className="textContent">
             <h3>Rift Toronto Flagship</h3>
@@ -49,48 +49,42 @@ export default function () {
         <section className="storePanel">
           <ul>
             <li>
-              <img
-                src="src/assets/pexels-abdullah-alsaibaie-10853637.jpg"
-                alt=""
-              />
+              <img src="client/src/assets/demo1.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-broxx-asia-11135667.jpg" alt="" />
+              <img src="client/src/assets/demo2.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-broxx-asia-11292946.jpg" alt="" />
+              <img src="client/src/assets/demo3.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img
-                src="src/assets/pexels-cristiano-de-luca-10963373.jpg"
-                alt=""
-              />
+              <img src="client/src/assets/demo4.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-lappen-fashion-4296075.jpg" alt="" />
+              <img src="client/src/assets/demo5.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-malcolm-garret-6744427.jpg" alt="" />
+              <img src="client/src/assets/demo6.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-ray-piedra-1464625.jpg" alt="" />
+              <img src="client/src/assets/demo7.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
             <li>
-              <img src="src/assets/pexels-rujwal-pradhan-10210779.jpg" alt="" />
+              <img src="client/src/assets/demo8.jpg" alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
