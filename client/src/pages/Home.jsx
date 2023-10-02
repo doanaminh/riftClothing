@@ -35,10 +35,7 @@ export default function () {
 
         <section className="storeTour">
           <video autoPlay loop muted>
-            <source
-              src="src/assets/pexels-cottonbro-5741120 (720p).mp4"
-              type="video/mp4"
-            />
+            <source src="../assets/video.mp4" type="video/mp4" />
           </video>
           <div className="textContent">
             <h3>Rift Toronto Flagship</h3>
