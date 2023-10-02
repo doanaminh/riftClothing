@@ -40,7 +40,9 @@ export default function () {
             <li>
               <a href="">R I F T</a>
             </li>
-            <li></li>
+            <li>
+              <a href="/admin">admin</a>
+            </li>
           </ul>
           <div className="hamSearch">
             <input type="text" placeholder="Search . . ." />
