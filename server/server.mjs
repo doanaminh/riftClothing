@@ -2,7 +2,12 @@ import express from "express";
 import cors from "cors";
 import "./loadEnvironment.mjs";
 import records from "./routes/record.mjs";
-// import main from "./routes/main.mjs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const PORT = process.env.PORT || 5050;
 const app = express();
@@ -14,7 +19,11 @@ app.use(express.json());
 app.set("view engine", "jsx");
 
 //Static Folder
+app.use(express.static(path.join(__dirname, "..", "dist")));
 app.use(express.static("public"));
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+});
 
 // app.use("/", main);
 app.use("/record", records);
