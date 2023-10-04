@@ -4,7 +4,7 @@ import React from "react";
 import express from "express";
 import cors from "cors";
 import "./loadEnvironment.mjs";
-import records from "./routes/record.mjs";
+import records from "../routes/record.mjs";
 import { renderToString } from "react-dom/server";
 
 import path from "path";
@@ -19,7 +19,11 @@ app.use(express.json());
 app.set("view engine", "jsx");
 
 //Static Folder
+app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
+});
 
 // app.use("/", main);
 app.use("/record", records);
