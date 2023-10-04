@@ -1,8 +1,13 @@
+import "babel-register";
+import React from "react";
+
 import express from "express";
 import cors from "cors";
 import "./loadEnvironment.mjs";
 import records from "./routes/record.mjs";
-// import main from "./routes/main.mjs";
+import { renderToString } from "react-dom/server";
+
+import path from "path";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
