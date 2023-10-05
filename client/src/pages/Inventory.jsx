@@ -1,10 +1,10 @@
-import recordList from "../components/create";
+import List from "../components/recordList";
 
 export default function () {
   return (
     <>
       <section>
-        <recordList />
+        <List />
       </section>
     </>
   );

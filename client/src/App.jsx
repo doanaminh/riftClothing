@@ -1,18 +1,18 @@
 import "./App.css";
-import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 
-import UploadItem from "./pages/UploadItem";
-import Inventory from "./pages/Inventory";
+// import UploadItem from "./pages/UploadItem";
+// import Inventory from "./pages/Inventory";
 import Admin from "./pages/Admin";
 import Edit from "./components/edit";
+import Create from "./components/create";
+import RecordList from "./components/recordList";
 
 export default function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -21,10 +21,10 @@ export default function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/admin" element={<Admin />} />
             <Route path="/edit/:id" element={<Edit />} />
-            <Route path="/upload" element={<UploadItem />} />
-            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/create" element={<Create />} />
+            <Route exact path="/list" element={<RecordList />} />
           </Routes>
           <Footer />
         </HelmetProvider>

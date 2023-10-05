@@ -1,8 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import Hamenu from "./Hamenu";
 
 export default function () {
-  const navigate = useNavigate();
 
   return (
     <>

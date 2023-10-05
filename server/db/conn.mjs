@@ -4,12 +4,12 @@ const connectionString = process.env.ATLAS_URI || "";
 
 const client = new MongoClient(connectionString);
 
-//Connect To Database
 let conn;
 try {
+  console.log("Connecting to MongoDB Atlas...");
   conn = await client.connect();
-  console.log("Connected to MongoDB!");
-} catch (e) {
+  console.log('you in');
+} catch(e) {
   console.error(e);
 }
 
