@@ -5,10 +5,10 @@ export default function () {
   return (
     <ul style={{ paddingTop: "5rem" }}>
       <li>
-        <a href="/inventory">list</a>
+        <a href="/recordList">list</a>
       </li>
       <li>
-        <a href="/upload">create</a>
+        <a href="/create">create</a>
       </li>
     </ul>
   );
