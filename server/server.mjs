@@ -13,16 +13,16 @@ const PORT = process.env.PORT || 5050;
 const app = express();
 
 app.use(cors());
-app.use(express.json());
+// app.use(express.json());
 
 //Using JSX for views
-app.set("view engine", "jsx");
+// app.set("view engine", "jsx");
 
 //Static Folder
-app.use(express.static(path.join(__dirname, "..", "dist")));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "..", "index.html")));
+// app.use(express.static("public"));
 app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
 // app.use("/", main);
