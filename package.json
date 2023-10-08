@@ -11,8 +11,7 @@
     "server-dev": "cd server && npm run dev",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "dev": "concurrently \"npm run server-dev\" \"npm run client-dev\"",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
@@ -27,7 +26,6 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^1.3.0",
     "react-router-dom": "^6.16.0",
-    "react-scripts": "^5.0.1",
     "vite": "^4.4.10"
   },
   "devDependencies": {
