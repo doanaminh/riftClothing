@@ -9,7 +9,7 @@
     "server": "cd server && npm run start",
     "client-dev": "vite",
     "server-dev": "cd server && npm run dev",
-    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "npm run client",
     "dev": "concurrently \"npm run server-dev\" \"npm run client-dev\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
