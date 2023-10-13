@@ -10,12 +10,12 @@ import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-// import UploadItem from "./pages/UploadItem";
-// import Inventory from "./pages/Inventory";
+import UploadItem from "./pages/UploadItem";
+import Inventory from "./pages/Inventory";
 import Admin from "./pages/Admin";
 import Edit from "./components/edit";
-import Create from "./components/create";
-import RecordList from "./components/recordList";
+// import Create from "./components/create";
+// import RecordList from "./components/recordList";
 
 export default function App() {
   return (
@@ -27,8 +27,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/edit/:id" element={<Edit />} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/recordList" element={<RecordList />} />
+            <Route path="/uploadItem" element={<UploadItem />} />
+            <Route path="/inventory" element={<Inventory />} />
           </Routes>
           <Footer />
         </HelmetProvider>

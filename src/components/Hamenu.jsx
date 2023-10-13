@@ -19,6 +19,7 @@ export default function () {
       ...defHamOpen,
       [e.target.id]: !hamOpen[`${ev}`],
     });
+    console.log(hamOpen);
   };
 
   return (
@@ -101,10 +102,16 @@ export default function () {
             <ul className="mens">
               <div className="hamCat" onClick={handleHamOpen} id="mens">
                 <label id="mens">Mens</label>
-                <span id="mens" className="plus">
+                <span
+                  id="mens"
+                  className={`plus ${hamOpen.mens ? "hidePlus" : ""}`}
+                >
                   +
                 </span>
-                <span id="mens" className="menos">
+                <span
+                  id="mens"
+                  className={`menos ${hamOpen.mens ? "showMenos" : ""}`}
+                >
                   -
                 </span>
               </div>
@@ -142,10 +149,16 @@ export default function () {
             <ul className="womens">
               <div className="hamCat" onClick={handleHamOpen} id="womens">
                 <label id="womens">Womens</label>
-                <span id="womens" className="plus">
+                <span
+                  id="womens"
+                  className={`plus ${hamOpen.womens ? "hidePlus" : ""}`}
+                >
                   +
                 </span>
-                <span id="womens" className="menos">
+                <span
+                  id="womens"
+                  className={`menos ${hamOpen.womens ? "showMenos" : ""}`}
+                >
                   -
                 </span>
               </div>
