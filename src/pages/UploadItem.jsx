@@ -1,10 +1,10 @@
-import Create from "../components/create";
+import Upload from "../components/upload";
 
 export default function () {
   return (
     <>
       <section>
-        <Create />
+        <Upload />
       </section>
     </>
   );

@@ -8,7 +8,61 @@ import demo6 from "../assets/demo6.jpg";
 import demo7 from "../assets/demo7.jpg";
 import demo8 from "../assets/demo8.jpg";
 
+import Inventory from "./Inventory";
+
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import ItemList from "../components/Items";
+
 export default function () {
+  const Item = (props) => (
+    <li>
+      <img src={props.item.img} alt="" />
+      <td>{props.item.name}</td>
+      <td>{props.item.quantity}</td>
+      <td>{props.item.price}</td>
+    </li>
+  );
+
+  const [items, setItems] = useState([]);
+
+  // This method fetches the records from the database.
+  useEffect(() => {
+    async function getItems() {
+      const response = await fetch(`http://localhost:5000/items`);
+
+      if (!response.ok) {
+        const message = `An error occurred: ${response.statusText}`;
+        window.alert(message);
+        return;
+      }
+
+      const items = await response.json();
+      setItems(items);
+    }
+
+    getItems();
+
+    return;
+  }, [items.length]);
+
+  // This method will delete a record
+  async function deleteItem(id) {
+    await fetch(`http://localhost:5000/item/${id}`, {
+      method: "DELETE",
+    });
+
+    const newItems = items.filter((el) => el._id !== id);
+    setRecords(newItems);
+  }
+
+  // This method will map out the records on the table
+  function itemList() {
+    return items.map((item) => {
+      return <Item item={item} key={item._id} />;
+    });
+  }
+
   return (
     <>
       <section className="Home">
@@ -57,7 +111,7 @@ export default function () {
         </section>
 
         <section className="storePanel">
-          <ul>
+          {/* <ul>
             <li>
               <img src={demo1} alt="" />
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
@@ -98,7 +152,8 @@ export default function () {
               <p className="itemName">Rift for the Nikes: Phantom Whites</p>
               <span className="itemPrice">$230</span>
             </li>
-          </ul>
+          </ul> */}
+          <ItemList />
         </section>
       </section>
     </>

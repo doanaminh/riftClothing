@@ -14,8 +14,6 @@ import UploadItem from "./pages/UploadItem";
 import Inventory from "./pages/Inventory";
 import Admin from "./pages/Admin";
 import Edit from "./components/edit";
-// import Create from "./components/create";
-// import RecordList from "./components/recordList";
 
 export default function App() {
   return (

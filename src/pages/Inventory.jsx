@@ -1,10 +1,9 @@
-import RecordList from "../components/recordList";
-
+import ItemList from "../components/Items";
 export default function () {
   return (
     <>
       <section>
-        <RecordList />
+        <ItemList />
       </section>
     </>
   );
